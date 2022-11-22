@@ -1,0 +1,7 @@
+.container mat-card {
+  padding: 20px;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}

@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">
+    <button #menuTrigger="matMenuTrigger" (mouseover)="menuTrigger.openMenu()" [matMenuTriggerFor]="menu" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <span (mouseleave)="menuTrigger.closeMenu()">
+        <button mat-menu-item (click)="loadHomePage()">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button mat-menu-item (click)="loadUserProfile()">
+          <mat-icon>account_circle</mat-icon>
+          <span>User Profile</span>
+        </button>
+        <button mat-menu-item (click)="loadMultiForm()">
+          <mat-icon>insert_invitation</mat-icon>
+          <span>Multi Form</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout</span>
+        </button>
+      </span>
+    </mat-menu>
+  </span>
+  <span class="fill-remaining-space">My APP</span>
+</mat-toolbar>

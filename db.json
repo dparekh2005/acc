@@ -1,0 +1,94 @@
+{
+  "transactionList": [
+    {
+      "transactionType": "New",
+      "reference": "42342342",
+      "customerNumber": "52342",
+      "customerName": "Divyesh Parekh",
+      "customerAddress": "53, Maninagar, ahmedabad",
+      "customerPhoneNumber": "3423422123",
+      "transferAmount": 2112,
+      "transferCurrency": "CHF",
+      "beneficiaryBank": "SBI Bank",
+      "beneficiaryAccountNumber": "34234523",
+      "paymentDetails": "VISA-Card-324512",
+      "credit_DebitCardDetails": "23141123412341",
+      "region": "Curepipe",
+      "id": 1
+    },
+    {
+      "transactionType": "New",
+      "reference": "32423",
+      "customerNumber": "23423",
+      "customerName": "Rajat Shah",
+      "customerAddress": "address",
+      "customerPhoneNumber": "324234",
+      "transferAmount": 122,
+      "transferCurrency": "EUR",
+      "beneficiaryBank": "ABC",
+      "beneficiaryAccountNumber": "3424234",
+      "paymentDetails": "det",
+      "credit_DebitCardDetails": "credit",
+      "region": "Vacoas",
+      "id": 2
+    },
+    {
+      "transactionType": "New",
+      "reference": "34234",
+      "customerNumber": "324234",
+      "customerName": "Prashant Vyas",
+      "customerAddress": "ffsetuv",
+      "customerPhoneNumber": "424523",
+      "transferAmount": 112,
+      "transferCurrency": "USD",
+      "beneficiaryBank": "bannif",
+      "beneficiaryAccountNumber": "221341",
+      "paymentDetails": "dset",
+      "credit_DebitCardDetails": "325234523454",
+      "region": "Port_Mathurin",
+      "id": 3
+    },
+    {
+      "transactionType": "New",
+      "reference": "212412341",
+      "customerNumber": "32145123",
+      "customerName": "Vishal Bhatt",
+      "customerAddress": "Address",
+      "customerPhoneNumber": "3423412",
+      "transferAmount": 2123412,
+      "transferCurrency": "MUR",
+      "beneficiaryBank": "bakn",
+      "beneficiaryAccountNumber": "345125512",
+      "paymentDetails": "pay",
+      "credit_DebitCardDetails": "342523424",
+      "region": "Port_Louis",
+      "id": 4
+    },
+    {
+      "transactionType": "New",
+      "reference": "CUS202211214909",
+      "customerNumber": "324234234",
+      "customerName": "Sanjay Vyas",
+      "customerAddress": "adviiocd",
+      "customerPhoneNumber": "324234232",
+      "transferAmount": 121,
+      "transferCurrency": "AED",
+      "beneficiaryBank": "bank",
+      "beneficiaryAccountNumber": "2342342",
+      "paymentDetails": "payca",
+      "credit_DebitCardDetails": "342342345",
+      "region": "Port_Mathurin",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

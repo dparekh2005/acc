@@ -1,0 +1,71 @@
+<h1 mat-dialog-title>Create New Transaction</h1>
+<div mat-dialog-content>
+  <form [formGroup]="newTransactionForm" ngNativeValidate #form>
+    <label id="transaction-radio-group-label">Choose Transaction Type</label>
+    <mat-radio-group formControlName="transactionType" class="transaction-radio-group"  aria-labelledby="transaction-radio-group-label">
+      <mat-radio-button class="transaction-radio-button" *ngFor="let transactionType of transactionTypes" [value]="transactionType">
+        {{transactionType}}
+      </mat-radio-button>
+    </mat-radio-group>
+    <mat-form-field appearance="outline">
+      <mat-label>Customer Name</mat-label>
+      <input matInput formControlName="customerName" placeholder="Enter Customer Name">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Customer Number</mat-label>
+      <input matInput formControlName="customerNumber" placeholder="Enter Customer Number">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Customer Address</mat-label>
+      <textarea matInput formControlName="customerAddress" placeholder="Enter Customer Address"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Customer Phone Number</mat-label>
+      <input matInput formControlName="customerPhoneNumber" (keypress)="validateNumbers($event)" placeholder="Enter Customer Phone Number">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Transfer Amount</mat-label>
+      <input matInput formControlName="transferAmount" type="number" (keypress)="validateNumbers($event)" placeholder="Enter Transfer Amount">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Transfer Currency</mat-label>
+      <mat-select formControlName="transferCurrency">
+        <mat-option *ngFor="let currency of currencyList" [value]="currency.value">
+          {{currency.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Beneficiary Bank</mat-label>
+      <input matInput formControlName="beneficiaryBank" (keypress)="validateChar($event)" placeholder="Enter Beneficiary Bank">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Beneficiary Account Number</mat-label>
+      <input matInput formControlName="beneficiaryAccountNumber" placeholder="Enter Beneficiary Account Number">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Payment Details</mat-label>
+      <input matInput formControlName="paymentDetails" (keypress)="validateChar($event)" placeholder="Enter Payment Details">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Credit/Debit Card Details</mat-label>
+      <input matInput formControlName="credit_DebitCardDetails" placeholder="Enter Credit/Debit Card Details">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Region</mat-label>
+      <mat-select formControlName="region">
+        <mat-option *ngFor="let region of regionList" [value]="region.value">
+          {{region.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-action align="end">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button style="margin-left:8px" type="submit" class="mt-5" color="primary" (click)="newTransactionSubmit()">Submit</button>
+</div>
+
+
+
+
